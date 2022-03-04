@@ -148,3 +148,10 @@ console.log("Hallo " + "Welt")  // => "Hallo Welt"
 console.log("affenhaus".includes("haus"))  // => true
 console.log("affenhaus".includes("baum"))  // => false
 ```
+
+Und natürlich können wir auch bei Strings `==` und `!=` verwenden:
+
+```js
+console.log("affe" == "affe") // => true
+console.log("affe" != "affe") // => false
+```
