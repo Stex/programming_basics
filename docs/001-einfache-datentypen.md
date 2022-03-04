@@ -1,5 +1,10 @@
 # Einfache Datentypen
 
+- [Einfache Datentypen](#einfache-datentypen)
+  - [Booleans / Wahrheitswerte](#booleans--wahrheitswerte)
+  - [Numbers / Zahlen](#numbers--zahlen)
+  - [Strings / Zeichenketten](#strings--zeichenketten)
+
 > In den folgenden Beispielen steht oft um den eigentlichen Code immer noch ein `console.log()`, dies sorgt
 nur dafür, dass das Ergebnis des Codes in den runden Klammern in der Konsole ausgegeben wird,
 wenn diese Datei hier mit `lit-node docs/001-einfache-datentypen.md` ausgeführt wird.
@@ -48,7 +53,7 @@ vergleichen kann. Der `==`-Operator gibt immer einen Boolean zurück, nämlich
 
 Wie oben schon beschrieben wird `true` niemals gleich `false` sein, das lässt sich mit `==` so testen:
 
-```javascript
+```js
 console.log(true == true)    // => true
 console.log(false == false)  // => true
 console.log(false == true)   // => false
@@ -58,7 +63,7 @@ console.log(true == false)   // => false
 Zudem gibt es als Gegenstück zum Gleichheitsoperator `==` auch den Ungleichheitsoperator `!=`.
 Dieser gibt `true` zurück, wenn zwei Werte nicht gleich sind und `false`, wenn sie gleich sind:
 
-```javascript
+```js
 console.log(true != true)    // => false
 console.log(false != false)  // => false
 console.log(false != true)   // => true
@@ -68,14 +73,14 @@ console.log(true != false)   // => true
 Wenn man sich `==` und `!=` anschaut, kann man diese Operatoren als "gleich" und "nicht gleich" lesen.  
 Das Ausrufezeichen entspricht hier dem Wort "nicht" und kann auch tatsächlich so in Javascript verwendet werden:
 
-```javascript
+```js
 console.log(!true)  // => false
 console.log(!false) // => true
 ```
 
 Damit ließe sich ein "ungleich" auch wie folgt ausdrücken, die beiden Zeilen tun das gleiche:
 
-```javascript
+```js
 console.log(true != true)    // => true
 console.log(!(true == true)) // => false
 ```
@@ -86,7 +91,7 @@ Unter Zahlen fallen in Javascript sowohl Ganzzahlen (1, 2, 3, ...) als auch Flie
 
 Bei der Arbeit mit Zahlen können wir viele aus der Mathematik bekannte Operatoren verwenden:
 
-```javascript
+```js
 console.log(1 + 1)  // => 2
 console.log(2 - 1)  // => 1
 console.log(2 * 2)  // => 4
@@ -103,7 +108,7 @@ zurückgeben, nämlich die Vergleichsoperatoren:
 * `>=` (Ein Wert ist größer oder gleich dem anderen)
 * `<=` (Ein Wert ist kleiner oder gleich dem anderen)
 
-```javascript
+```js
 console.log(5 > 2)  // => true
 console.log(9 <= 9) // => true
 console.log(2 >= 3) // => false
@@ -116,14 +121,14 @@ das ist kein Akzent!) eingeschlossen werden.
 
 Beispiele hier sind:
 
-```javascript
+```js
 "Hallo Welt"
 'Javascript'
 ```
 
 Aber auch
 
-```javascript
+```js
 "¯\_(ツ)_/¯"
 "🙉 🙈 🙊"
 ```
@@ -132,7 +137,7 @@ Ein String bringt direkt einige Methoden (dazu später mehr) mit, die es einfach
 
 Wenn ich im folgenden "#" vor ein Wort schreibe, meine ich damit einen Methodennamen.
 
-```javascript
+```js
 // #length gibt die Anzahl Zeichen in einem String als Zahl zurück
 console.log("abcde".length)  // => 5
 
